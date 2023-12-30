@@ -1,4 +1,4 @@
-# Building ArduPilot #
+# ArduPilot
 
 ## Get the Source
 
