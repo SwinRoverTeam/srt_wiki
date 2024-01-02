@@ -8,7 +8,7 @@ Follow [this](https://docs.docker.com/engine/install/) guide and choose the inst
 Docker is only used for building Ardupilot and the use of SITL test suite since qgroundcontrol is running Qt it is faster and easier to build locally
 
 ## To get the Source
-Follow the instruction on github to generate and upload a personal ssh rsa key to your github account.
+Follow the instruction on github to generate and upload a personal [ssh rsa key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to your github account.
 
 The general process for cloning a repo will look something like this.
 ```sh
@@ -25,12 +25,12 @@ You should write your commit messages to follow the imperative of "This commit w
 
 Keep commit messages short and if you've made large changes describe them in more detail here in the wiki.
 
-To send your changes to the github use a push. It will look somthing like this
+To send your changes to the github use a push. It will look somthing like this:
 ```sh
 git push origin dev
 ```
 
-Finally, keep your local repo up to date with everyone else by using a rebase
+Finally, [keep your local repo up to date](https://stefanbauer.me/articles/how-to-keep-your-git-fork-up-to-date) with everyone else by using a rebase.
 ```sh
 git rebase upstream master
 ```

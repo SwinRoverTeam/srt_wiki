@@ -1,11 +1,23 @@
 # ArduPilot
 
+## Setup
+
+[Setup the ubuntu linux](https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux)
+
 ## Get the Source
 
 Clone the project from GitHub:
 ```sh
 git clone --recursive https://github.com/ArduPilot/ardupilot.git
 cd ardupilot
+```
+
+## Setup -- summary
+```sh
+docker build . -t ardupilot
+```
+```sh
+docker run --rm -it -v `pwd`:/ardupilot:latest bash
 ```
 
 You can also read more about the build system in the
