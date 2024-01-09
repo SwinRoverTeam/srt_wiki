@@ -8,19 +8,11 @@
 
 Clone the project from GitHub:
 ```sh
-git clone --recursive https://github.com/ArduPilot/ardupilot.git
+git clone --recursive git@github.com:SwinRoverTeam/ardupilot.git
 cd ardupilot
 ```
 
-## Setup -- summary
-```sh
-docker build . -t ardupilot
-```
-```sh
-docker run --rm -it -v `pwd`:/ardupilot:latest bash
-```
-
-You can also read more about the build system in the
+## Reference for altering the build system
 [Waf Book](https://waf.io/book/).
 
 waf should always be called from the locally cloned ardupilot root directory for the local branch you are trying to build from.
@@ -33,76 +25,28 @@ Do not run `waf` with `sudo`!  This leads to permission and environment problems
 There are several commands in the build system for advanced usage, but here we
 list some basic and more used commands as example.
 
-* **Build ArduCopter**
+* **Build ArduRover**
 
-    Below shows how to build ArduCopter for the Pixhawk2/Cube. Many other boards are
-    supported and the next section shows how to get a full list of them.
+    Configure the project for Cube Orange Plus and build the source for
+    specifically the ardurover target, compiling everything at once slow
+    waf down too much. waf will handle parallelisation here.
 
     ```sh
-    ./waf configure --board CubeBlack
-    ./waf copter
+    ./waf configure --board CubeOrangePlus
+    ./waf --targets bin/ardurover
     ```
 
-    The first command should be called only once or when you want to change a
-    configuration option. One configuration often used is the `--board` option to
-    switch from one board to another one. For example we could switch to
-    SkyViper GPS drone and build again:
+    If you're missing a python package after this step, install it using apt
+    then re-run;
 
     ```sh
-    ./waf configure --board skyviper-v2450
-    ./waf copter
+    ./waf --targets bin/ardurover
     ```
 
-    If building for the bebop2 the binary must be built statically:
+    Using a python venv of the provided install script will break the project.
+    (we should move to cmake).
 
-    ```sh
-    ./waf configure --board bebop --static
-    ./waf copter
-    ```    
-
-    The "arducopter" binary should appear in the `build/<board-name>/bin` directory.
-
-* **List available boards**
-
-
-    It's possible to get a list of supported boards on ArduPilot with the command
-    below
-
-    ```sh
-    ./waf list_boards
-
-    ```
-
-    Here are some commands to configure waf for commonly used boards:
-
-    ```sh
-    ./waf configure --board bebop --static # Bebop or Bebop2
-    ./waf configure --board edge           # emlid edge
-    ./waf configure --board fmuv3          # 3DR Pixhawk 2 boards
-    ./waf configure --board navio2         # emlid navio2
-    ./waf configure --board Pixhawk1       # Pixhawk1
-    ./waf configure --board CubeBlack      # Hex/ProfiCNC Cube Black (formerly known as Pixhawk 2.1)
-    ./waf configure --board Pixracer       # Pixracer
-    ./waf configure --board skyviper-v2450 # SkyRocket's SkyViper GPS drone using ChibiOS
-    ./waf configure --board sitl           # software-in-the-loop simulator
-    ./waf configure --board sitl --debug   # software-in-the-loop simulator with debug symbols
-
-    ```
-
-* **List of available vehicle types**
-
-    Here is a list of the most common vehicle build targets:
-
-    ```sh
-    ./waf copter                            # All multirotor types
-    ./waf heli                              # Helicopter types
-    ./waf plane                             # Fixed wing airplanes including VTOL
-    ./waf rover                             # Ground-based rovers and surface boats
-    ./waf sub                               # ROV and other submarines
-    ./waf antennatracker                    # Antenna trackers
-    ./waf AP_Periph                         # AP Peripheral
-    
-    ```
+    The "ardurover" binary should appear in the `build/<board-name>/bin` directory.
 
 * **Clean the build**
 
@@ -117,12 +61,14 @@ list some basic and more used commands as example.
 
 * **Upload or install**
 
+    You should be using QGroundControl to upload the firmware not these:
+
     Build commands have a `--upload` option in order to upload the binary built
     to a connected board. This option is supported by Pixhawk and Linux-based boards.
     The command below uses the `--targets` option that is explained in the next item.
 
     ```sh
-    ./waf --targets bin/arducopter --upload
+    ./waf --targets bin/ardurover --upload
     ```
 
     For Linux boards you need first to configure the IP of the board you
@@ -238,43 +184,6 @@ to one main group.
 
 There's a special group, called "all", that comprises all programs.
 
-#### Main groups ####
-
-The main groups form a partition of all programs. Besides separating the
-programs logically, they also define where they are built.
-
-The main groups are:
-
- - bin: *the main binaries, that is, ardupilot's main products - the vehicles and
-   Antenna Tracker*
- - tools
- - examples: *programs that show how certain libraries are used or to simply
-   test their operation*
- - benchmarks: *requires `--enable-benchmarks` during configurarion*
- - tests: *basically unit tests to ensure changes don't break the system's
-   logic*
-
-All build files are placed under `build/<board>/`, where `<board>` represents
-the board/platform you selected during configuration. Each main program group
-has a folder with its name directly under `build/<board>/`. Thus, a program
-will be stored in `build/<board>/<main_group>/`, where `<main_group>` is the
-main group the program belongs to. For example, for a linux build, arduplane,
-which belongs to the main group "bin", will be located at
-`build/linux/bin/arduplane`.
-
-#### Main product groups ####
-
-Those are groups for ardupilot's main products. They contain programs for the
-product they represent. Currently only the "copter" group has more than one
-program - one for each frame type.
-
-The main product groups are:
-
- - antennatracker
- - copter
- - plane
- - rover
-
 #### Building a program group ####
 
 Ardupilot adds to waf an option called `--program-group`, which receives as
@@ -293,20 +202,6 @@ Examples:
 
 # Build all benchmarks and tests
 ./waf --program-group benchmarks --program-group tests
-```
-#### Shortcut for program groups ####
-
-For less typing, you can use the group name as the command to waf. Examples:
-
-```bash
-# Build all vehicles and Antenna Tracker
-./waf bin
-
-# Build all examples
-./waf examples
-
-# Build arducopter binaries
-./waf copter
 ```
 
 ### Building a specific program ###
@@ -356,21 +251,6 @@ Examples:
 It's possible to pass the option `--debug` to the `configure` command. That
 will set compiler flags to store debugging information in the binaries so that
 you can use them with `gdb`, for example. That option might come handy when using SITL.
-
-### Build-system wrappers ###
-
-The `waf` binary on root tree is actually a wrapper to the real `waf` that's
-maintained in its own submodule.  It's possible to call the latter directly via
-`./modules/waf/waf-light` or to use an alias if you prefer typing `waf` over
-`./waf`.
-
-```sh
-alias waf="<ardupilot-directory>/modules/waf/waf-light"
-
-```
-
-There's also a make wrapper called `Makefile.waf`. You can use
-`make -f Makefile.waf help` for instructions on how to use it.
 
 ### Command line help ###
 
