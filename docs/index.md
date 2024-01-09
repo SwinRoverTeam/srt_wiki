@@ -10,7 +10,10 @@ Welcom to the Swinburne Rover Team (aka Rock Munchers) Wiki, we have the answers
 
 ## QUICK LINKS:
 
-Full getting started guide [getting started](guides/index.md)
+Full getting started guide [link](guides/index.md)
+Ardupilot developer wiki [link](https://ardupilot.org/dev/index.html)
+QGroundControl developer wiki [link](https://docs.qgroundcontrol.com/master/en/qgc-dev-guide/)
+MavLink developer wiki [link](https://mavlink.io/en/)
 
 ## Welcome to MkDocs
 
