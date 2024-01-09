@@ -1,11 +1,14 @@
 # Build Guides
 
 ## Dev environment setup instructions
+Any, Ubuntu compatible operating system will work for development.
+All of the projects under the rocker muncher rover are built navitely though they include Dockerfiles
+if you wish to run them in containers, instructions for doing so can be found on their repsective wiki pages.
 
-### 1. Install Docker
-Follow [this](https://docs.docker.com/engine/install/) guide and choose the instructions for the platform you are using.
-
-Docker is only used for building Ardupilot and the use of SITL test suite since qgroundcontrol is running Qt it is faster and easier to build locally
+** Do keep in mind** Ardupilot running in the Docker container will not be able to spawn
+mavproxy windows for map and orientation. You will only be able to see information from an external instance of mavproxy
+or your ground control system.
+The process for doing this is not covered in this wiki but you can find it in the Ardupilot dev wiki.
 
 ## To get the Source
 Follow the instruction on github to generate and upload a personal [ssh rsa key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to your github account.
@@ -34,6 +37,9 @@ Finally, [keep your local repo up to date](https://stefanbauer.me/articles/how-t
 ```sh
 git rebase upstream master
 ```
+
+** DO NOT PULL **
+Performing a pull request from the upstream location will override all of the changes made on our fork.
 
 ## Futher links
 checkout the ardupilot build guide here:
