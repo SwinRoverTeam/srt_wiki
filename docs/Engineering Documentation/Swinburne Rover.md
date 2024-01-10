@@ -11,10 +11,10 @@ On behalf of the rover team, we extend our deepest gratitude to those partaking 
 
 ## Layout
 Current layout structure:
-- talk about what you are doing in your assigned role.
-- show pictures of the things you are working on and developing.
-- talk about the images in detail on what you did and why.
-- sources: websites for part sourcing, GrabCAD models, data sheets, special diagrams, maybe special learning materials etc. Anything that could be useful for future team members and for yourself. 
+1. Talk about what you are doing in your assigned role.
+2. Show pictures of the things you are working on and developing.
+3. Talk about the images in detail on what you did and why.
+4. Sources: websites for part sourcing, GrabCAD models, data sheets, special diagrams, maybe special learning materials etc. Anything that could be useful for future team members and for yourself. 
 
 ## Chassis
 **By Don Dulsan Wijesinghe and Noah B**
