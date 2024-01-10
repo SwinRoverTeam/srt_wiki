@@ -19,4 +19,22 @@ Current layout structure:
 ## Chassis
 **By Don Dulsan Wijesinghe and Noah B**
 
+## Dynamics
+
+## Arm
+**By Mukul Chadha and Mikayla M**
+
+
+## Manufacturing
+**By Anton V**
+
+
+## Electronics
+**By Conleth B**
+
+## Communications
+
+
+## Software
+
 
