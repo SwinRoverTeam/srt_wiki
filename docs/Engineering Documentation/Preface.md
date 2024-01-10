@@ -1,5 +1,3 @@
-### PREFACE
-----------------------------------------------------------------------------------------------------------------------------------------------------------
 The Swinburne Rover team was assembled to compete in the Australian Rover Challenge conducted by Adelaide University. The challenge requires the designing, manufacturing and testing of a lunar rover with efficiency and effectiveness in mind. 
 
 Various academic institutes worldwide will compete in this challenge, consolidating their engineering knowledge in numerous forms to maintain and improve their competitive edge. Ergo, this document was designed to capture the knowledge and technical details used and accrued by the members of the Swinburne Rover team.
