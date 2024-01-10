@@ -9,7 +9,6 @@ Meaning this documentation will act as a sort of ‘bible’. Although optional,
 
 On behalf of the rover team, we extend our deepest gratitude to those partaking in this arduous endeavour with us.
 
-**By Don Dulsan Wijesinghe, Chassis Team Lead**
 ## Layout
 Current layout structure:
 - talk about what you are doing in your assigned role.
