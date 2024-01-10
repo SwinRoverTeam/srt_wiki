@@ -1,4 +1,4 @@
-### **PREFACE**
+### PREFACE
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 The Swinburne Rover team was assembled to compete in the Australian Rover Challenge conducted by Adelaide University. The challenge requires the designing, manufacturing and testing of a lunar rover with efficiency and effectiveness in mind. 
 
