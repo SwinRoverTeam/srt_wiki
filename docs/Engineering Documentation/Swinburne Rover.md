@@ -8,3 +8,15 @@ When it comes to engineering any product, formal documentation is a requirement;
 Meaning this documentation will act as a sort of ‘bible’. Although optional, it might become necessary for any engineer working on the rover, especially as the physical rover gets increasingly complex. Hopefully, this document will serve you well.
 
 On behalf of the rover team, we extend our deepest gratitude to those partaking in this arduous endeavour with us.
+###### By Don Dulsan Wijesinghe, Chassis Team Lead
+## Layout
+Current layout structure:
+- talk about what you are doing in your assigned role.
+- show pictures of the things you are working on and developing.
+- talk about the images in detail on what you did and why.
+- sources: websites for part sourcing, GrabCAD models, data sheets, special diagrams, maybe special learning materials etc. Anything that could be useful for future team members and for yourself. 
+
+## Chassis
+###### By Don Dulsan Wijesinghe and Noah B
+
+
