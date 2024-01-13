@@ -1,0 +1,4282 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../csv/">
+      
+      
+        <link rel="next" href="../mavlink/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>General Settings (Settings View) - Swinburne Rover Team Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-settings-settings-view" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Swinburne Rover Team Wiki" class="md-header__button md-logo" aria-label="Swinburne Rover Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Swinburne Rover Team Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General Settings (Settings View)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../guides/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  Qgc dox
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../testdirectory/markdowntest/" class="md-tabs__link">
+          
+  
+  Testdirectory
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Swinburne Rover Team Wiki" class="md-nav__button md-logo" aria-label="Swinburne Rover Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Swinburne Rover Team Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../guides/ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ArduPilot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../guides/qgroundcontrol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../guides/simulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Qgc dox
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Qgc dox
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SUMMARY/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sidebar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Qgc dev guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Qgc dev guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl Dev Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/command_line_options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Line Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/communication_flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Communication Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/fact_system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fact System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/firmware_plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugin Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/release_branching_process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl Release/Branching process
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_7" id="__nav_3_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Hierarchy (high level)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_8" id="__nav_3_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Submission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/coding_style/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coding Style
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/dev_call/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bi-Weekly Dev Call
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/licences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Licences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/pull_requests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pull Requests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/contribute/unit_tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_9" id="__nav_3_3_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Custom build
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Custom build
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/create_repos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial Repository Setup For Custom Build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/custom_build/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Builds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/customization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/first_run_prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Run Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/fly_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fly View Customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/mavlink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAVLink Customisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Build Plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/release_branching_process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Process for Custom Builds [WIP Docs]
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/resource_override/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resource Overrides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/custom_build/toolbar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolbar Customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_10" id="__nav_3_3_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    File formats
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            File formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/file_formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/file_formats/mavlink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAVLink Log Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/file_formats/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters File Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/file_formats/plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan File Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_11" id="__nav_3_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Source and Builds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/getting_started/cent_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using QGC on CentOS 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/getting_started/container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building using Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_12" id="__nav_3_3_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plan
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            Plan
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/plan/mission_command_tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mission Command Tree
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_13" id="__nav_3_3_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/tools/mock_link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mock Link
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_14" id="__nav_3_3_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User interface design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            User interface design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/user_interface_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/user_interface_design/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/user_interface_design/font_palette/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Font and Palette
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/user_interface_design/multi_device_pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multi-Device Design Pattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_15" id="__nav_3_3_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Views
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            Views
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/views/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Top Level Views
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/views/fly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fly View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/views/plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/views/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../qgc-dev-guide/views/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Qgc user guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Qgc user guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Analyze view
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analyze view
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyze_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyze View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyze_view/geotag_images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GeoTag Images (Analyze View)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyze_view/log_download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log Download (Analyze View)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyze_view/mavlink_console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAVLink Console (Analyze View)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyze_view/mavlink_inspector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAVLink Inspector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fly view
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fly view
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fly_view/fly_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fly View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fly_view/replay_flight_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Replay Flight Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fly_view/video_overlay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video Overlay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/download_and_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download and Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/quick_start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plan view
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Plan view
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern_corridor_scan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corridor Scan (Plan Pattern)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern_fixed_wing_landing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fixed Wing Landing Pattern (Plan Pattern)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern_presets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan View - Pattern Presets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern_structure_scan_v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structure Scan (Plan Pattern)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/pattern_survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey (Plan Pattern)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/plan_geofence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan View - GeoFence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/plan_rally_points/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan View - Rally Points
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan_view/plan_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_6" id="__nav_3_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Releases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/daily_build_new_features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daily Build Major Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/daily_builds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daily Builds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/privacy_policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release_notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/stable_v3.2_long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl v3.2 Release Notes (Detailed)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/stable_v3.3_long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl v3.3 Release Notes (Detailed)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/stable_v4.0_additional/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGroundControl v4.0 Release Notes (Additional)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_7" id="__nav_3_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Settings view
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Settings view
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../console_logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Console Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    General Settings (Settings View)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    General Settings (Settings View)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#units" class="md-nav__link">
+    <span class="md-ellipsis">
+      Units
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data_persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Persistence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telemetry_logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telemetry Logs from Vehicle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fly_view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fly View
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan_view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plan View
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto_connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoConnect to the following devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AutoConnect to the following devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nmea_gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ground Station Location (NMEA GPS Device)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rtk_gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTK GPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adsb_server" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADSB Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-recording" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Recording
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brand-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brand Image
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mavlink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MAVLink Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offline_maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Offline Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual_joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_8" id="__nav_3_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup view
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Setup view
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/airframe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airframe Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/airframe_ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airframe Setup (ArduPilot)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/airframe_px4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airframe Setup (PX4)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Camera Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loading Firmware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/flight_modes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flight Modes Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/flight_modes_ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ArduPilot Flight Mode Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/flight_modes_px4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PX4 Flight Modes Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/motors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motor Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/motors_ardusub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motors Setup (ArduSub)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/radio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radio Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/safety_ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety Setup (ArduPilot)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/sensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/sensors_ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensor Setup (ArduPilot)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/sensors_px4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensor Setup (PX4)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/setup_view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/tuning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tuning Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/tuning_arducopter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ArduCopter Tuning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/tuning_ardupilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tuning (ArduPilot)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/tuning_ardusub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ArduSub Tuning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_view/tuning_px4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tuning (PX4)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_9" id="__nav_3_4_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_10" id="__nav_3_4_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Toolbar
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            Toolbar
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbar/toolbar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Toolbar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_11" id="__nav_3_4_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/parameter_download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter Download failures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/plan_upload_download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mission Upload/Download failures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/qgc_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting QGC Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/qgc_usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting QGC Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/resume_mission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resume Mission Failures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/vehicle_connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vehicle Connection Problems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Testdirectory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Testdirectory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../testdirectory/markdowntest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some Markdown Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="general-settings-settings-view">General Settings (Settings View)</h1>
+<p>The general settings (<strong>SettingsView &gt; General Settings</strong>) are the main place for application-level configuration.
+Settable values include: display units, autoconnection devices, video display and storage, RTK GPS, brand image, and other miscellaneous settings.</p>
+<p>::: info
+Values are settable even if no vehicle is connected. Settings that require a vehicle restart are indicated in the UI.
+:::</p>
+<p><img alt="SettingsView - Full General Tab" src="../../../assets/settings/general/overview.jpg" /></p>
+<h2 id="units">Units</h2>
+<p>This section defines the display units used in the application.</p>
+<p><img alt="Units settings" src="../../../assets/settings/general/units.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Distance</strong>: Meters | Feet</li>
+<li><strong>Area</strong>: SquareMetres | SquareFeet | SquareKilometers | Hectares | Acres | SquareMiles</li>
+<li><strong>Speed</strong>: Metres/second | Feet/second | Miles/hour | Kilometres/hour | Knots</li>
+<li><strong>Temperature</strong>: Celsius | Fahrenheit</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p>This section defines a number of miscellaneous settings, related to (non exhaustively): font sizes, colour schemes, map providers, map types, telemetry logging, audio output, low battery announcement levels, default mission altitude, <a href="../virtual_joystick/">virtual joysticks</a>, mission autoloading, default application file load/save path etc.</p>
+<p><img alt="Miscellaneous settings" src="../../../assets/settings/general/miscellaneous.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><span id="language"></span><strong>Language</strong>: System (System Language) | Bulgarian, Chinese, ...</li>
+</ul>
+<p><img alt="Display languages" src="../../../assets/settings/general/languages.jpg" /></p>
+<p>Translations are generally built into the application and selected automatically based on the system language.</p>
+<p>Metadata downloaded from the vehicle (such as parameter descriptions) might have translations as well.
+  These are downloaded from the internet upon vehicle connection. The translations are then cached locally.
+  This means an internet connection during vehicle connection is required at least once.</p>
+<ul>
+<li><span id="colour_scheme"></span><strong>Color Scheme</strong>: Indoor (Dark) | Outdoor (Light)</li>
+<li><strong>Map Provider</strong>: Google | Mapbox | Bing | Airmap | VWorld | Eniro | Statkart</li>
+<li><strong>Map Type</strong>: Road | Hybrid | Satellite</li>
+<li><strong>Stream GCS Position</strong>: Never | Always | When in Follow Me Flight Mode.</li>
+<li><strong>UI Scaling</strong>: UI scale percentage (affects fonts, icons, button sizes, layout etc.)</li>
+<li><strong>Mute all audio output</strong>: Turns off all audio output.</li>
+<li><strong>Check for Internet Connection</strong>: Uncheck to allow maps to be used in China/places where map tile downloads are likely to fail (stops the map-tile engine continually rechecking for an Internet connection).</li>
+<li><span id="autoload_missions"></span> <strong>Autoload Missions</strong>: If enabled, automatically upload a plan to the vehicle on connection.</li>
+<li>The plan file must be named <strong>AutoLoad#.plan</strong>, where the <code>#</code> is replaced with the vehicle id.</li>
+<li>The plan file must be located in the <a href="#load_save_path">Application Load/Save Path</a>.</li>
+<li><strong>Clear all settings on next start</strong>: Resets all settings to the default (including this one) when <em>QGroundControl</em> restarts.</li>
+<li><strong>Announce battery lower than</strong>: Battery level at which <em>QGroundControl</em> will start low battery announcements.</li>
+<li><span id="load_save_path"></span><strong>Application Load/Save Path</strong>: Default location for loading/saving application files, including: parameters, telemetry logs, and mission plans.</li>
+</ul>
+<h2 id="data_persistence">Data Persistence</h2>
+<p><img alt="Data Persistence Settings" src="../../../assets/settings/general/data_persistence.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Disable all data persistence</strong>: Check to prevent any data being saved or cached: logs, map tiles etc.
+  This setting disables the <a href="#telemetry_logs">telemetry logs section</a>.</li>
+</ul>
+<h2 id="telemetry_logs">Telemetry Logs from Vehicle</h2>
+<p><img alt="Telemetry Logs from Vehicle Settings" src="../../../assets/settings/general/telemetry_logs.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><span id="autosave_log"></span><strong>Save log after each flight</strong>: Telemetry logs (<code>.tlog</code>) automatically saved to the <em>Application Load/Save Path</em> (<a href="#load_save_path">above</a>) after flight.</li>
+<li><strong>Save logs even if vehicle was not armed</strong>: Logs when a vehicle connects to <em>QGroundControl</em>.
+  Stops logging when the last vehicle disconnects.</li>
+<li><a href="../csv/"><strong>CSV Logging</strong></a>: Log subset of telemetry data to a CSV file.</li>
+</ul>
+<h2 id="fly_view">Fly View</h2>
+<p><img alt="Fly View Settings" src="../../../assets/settings/general/fly_view.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Use Preflight Checklist</strong>: Enable pre-flight checklist in Fly toolbar.</li>
+<li><strong>Enforce Preflight Checklist</strong>: Checklist completion is a pre-condition for arming.</li>
+<li><strong>Keep Map Centered on Vehicle</strong>: Forces map to center on the currently selected vehicle.</li>
+<li><strong>Show Telemetry Log Replay Status Bar</strong>: Display status bar for <a href="../../fly_view/replay_flight_data/">Replaying Flight Data</a>.</li>
+<li><strong>Virtual Joystick</strong>: Enable <a href="../virtual_joystick/">virtual joysticks</a> (PX4 only)</li>
+<li><strong>Use Vertical Instrument Panel</strong>: Align instrument panel vertically rather than horizontally (default).</li>
+<li><strong>Show additional heading indicators on Compass</strong>: Adds additional indicators to the compass rose:</li>
+<li><em>Blue arrow</em>: course over ground.</li>
+<li><em>White house</em>: direction back to home.</li>
+<li>
+<p><em>Green line</em>: Direction to next waypoint.</p>
+</li>
+<li>
+<p><strong>Lock Compass Nose-Up</strong>: Check to rotate the compass rose (default is to rotate the vehicle inside the compass indicateor).</p>
+</li>
+<li><strong>Guided Minimum Altitude</strong>: Minimum value for guided actions altitude slider.</li>
+<li><strong>Guided Maximum Altitude</strong>: Minimum value for guided actions altitude slider.</li>
+<li><strong>Go To Location Max Distance</strong>: The maximum distance that a Go To location can be set from the current vehicle location (in guided mode).</li>
+</ul>
+<h2 id="plan_view">Plan View</h2>
+<p><img alt="Plan View Settings" src="../../../assets/settings/general/plan_view.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Default Mission Altitude</strong>: The default altitude used for the Mission Start Panel, and hence for the first waypoint.</li>
+</ul>
+<h2 id="auto_connect">AutoConnect to the following devices</h2>
+<p>This section defines the set of devices to which <em>QGroundControl</em> will auto-connect.</p>
+<p><img alt="Device autoconnect settings" src="../../../assets/settings/general/autoconnect_devices.jpg" /></p>
+<p>Settings include:</p>
+<ul>
+<li><strong>Pixhawk:</strong> Autoconnect to Pixhawk-series device</li>
+<li><strong>SiK Radio:</strong> Autoconnect to SiK (Telemetry) radio</li>
+<li><strong>PX4 Flow:</strong> Autoconnect to PX4Flow device</li>
+<li><strong>LibrePilot:</strong> Autoconnect to Libre Pilot autopilot</li>
+<li><strong>UDP:</strong> Autoconnect to UDP</li>
+<li><strong>RTK GPS:</strong> Autoconnect to RTK GPS device</li>
+<li><strong>NMEA GPS Device:</strong> Autoconnect to an external GPS device to get ground station position (<a href="#nmea_gps">see below</a>)</li>
+</ul>
+<h3 id="nmea_gps">Ground Station Location (NMEA GPS Device)</h3>
+<p><em>QGroundControl</em> will automatically use an internal GPS to display its own location on the map with a purple <code>Q</code> icon (if the GPS provides a heading, this will be also indicated by the icon).
+It may also use the GPS as a location source for <em>Follow Me Mode</em> - currently supported on <a href="https://docs.px4.io/en/flight_modes/follow_me.html">PX4 Multicopters only</a>.</p>
+<p>You can also configure QGC to connect to an external GPS device via a serial or UDP port.
+The GPS device must support the ASCII NMEA format - this is normally the case.</p>
+<p>::: tip
+A higher quality external GPS system may be useful even if the ground station has internal GPS support.
+:::</p>
+<p>Use the <em>NMEA GPS Device</em> drop-down selector to manually select the GPS device and other options:</p>
+<ul>
+<li>USB connection:</li>
+</ul>
+<p><img alt="NMEA GPS Device - Serial" src="../../../assets/settings/general/nmea_gps_serial.jpg" /></p>
+<ul>
+<li><strong>NMEA GPS Device:</strong> <em>Serial</em></li>
+<li><strong>NMEA GPS Baudrate</strong>: The baudrate for the serial port</li>
+</ul>
+<p>:::tip
+  To troubleshoot serial GPS problems: Disable RTK GPS <a href="#auto_connect">auto connection</a>, close <em>QGroundControl</em>, reconnect your GPS, and open QGC.
+  :::</p>
+<ul>
+<li>Network connection:</li>
+</ul>
+<p><img alt="NMEA GPS Device - UDP" src="../../../assets/settings/general/nmea_gps_udp.jpg" /></p>
+<ul>
+<li><strong>NMEA GPS Device:</strong> <em>UDP Port</em>.</li>
+<li><strong>NMEA Stream UDP Port</strong>: The UDP port on which QGC will listen for NMEA data (QGC binds the port as a server)</li>
+</ul>
+<h2 id="rtk_gps">RTK GPS</h2>
+<p>This section allows you to specify the RTK GPS "Survey-in" settings, to save and reuse the result of a Survey-In operation, or to directly enter any other known position for the base station.</p>
+<p><img alt="RTK GPS Settings" src="../../../assets/settings/general/rtk_gps.jpg" /></p>
+<p>::: info
+The <em>Survey-In</em> process is a startup procedure required by RTK GPS systems to get an accurate estimate of the base station position.
+The process takes measurements over time, leading to increasing position accuracy.
+Both of the setting conditions must met for the Survey-in process to complete.
+For more information see <a href="https://docs.px4.io/en/advanced_features/rtk-gps.html">RTK GPS</a> (PX4 docs) and <a href="http://ardupilot.org/copter/docs/common-gps-how-it-works.html#rtk-corrections">GPS- How it works</a> (ArduPilot docs).
+:::</p>
+<p>::: tip
+In order to save and reuse a base position (because Survey-In is time consuming!) perform Survey-In once, select <em>Use Specified Base Position</em> and press <strong>Save Current Base Position</strong> to copy in the values for the last survey.
+The values will then persist across QGC reboots until they are changed.
+:::</p>
+<p>The settings are:</p>
+<ul>
+<li>Perform Survey-In</li>
+<li><strong>Survey-in accuracy (U-blox only):</strong> The minimum position accuracy for the RTK Survey-In process to complete.</li>
+<li><strong>Minimum observation duration:</strong> The minimum time that will be taken for the RTK Survey-in process.</li>
+<li>Use Specified Base Position</li>
+<li><strong>Base Position Latitude:</strong> Latitude of fixed RTK base station.</li>
+<li><strong>Base Position Longitude:</strong> Longitude of fixed RTK base station.</li>
+<li><strong>Base Position Alt (WGS94):</strong> Altitude of fixed RTK base station.</li>
+<li><strong>Base Position Accuracy:</strong> Accuracy of base station position information.</li>
+<li><strong>Save Current Base Position</strong> (button): Press to copy settings from the last Survey-In operation to the <em>Use Specified Base Position</em> fields above.</li>
+</ul>
+<h2 id="adsb_server">ADSB Server</h2>
+<p><img alt="ADSB_Server Settings" src="../../../assets/settings/general/adbs_server.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Connect to ADSB SBS server</strong>: Check to connect to ADSB server on startup.</li>
+<li><strong>Host address</strong>: Host address of ADSB server</li>
+<li><strong>Server port</strong>: Port of ADSB server</li>
+</ul>
+<p>QGC can consume ADSB messages in SBS format from a remote or local server (at the specified IP address/port) and display detected vehicles on the Fly View map.</p>
+<p>::: tip
+One way to get ADSB information from nearby vehicles is to use <a href="https://github.com/antirez/dump1090">dump1090</a> to serve the data from a connected RTL-SDR dongle to QGC.</p>
+<p>The steps are:</p>
+<ol>
+<li>Get an RTL-SDR dongle (and antenna) and attach it to your ground station computer (you may need to find compatible drivers for your OS).</li>
+<li>Install <em>dump1090</em> on your OS (either pre-built or build from source).</li>
+<li>Run <code>dump1090 --net</code> to start broadcasting messages for detected vehicles on TCP localhost port 30003 (127.0.0.1:30003).</li>
+<li>Enter the server (<code>127.0.0.1</code>) and port (<code>30003</code>) address in the QGC settings above.</li>
+<li>Restart QGC to start seeing local vehicles on the map.</li>
+</ol>
+<p>:::</p>
+<h2 id="video">Video</h2>
+<p>The <em>Video</em> section is used to define the source and connection settings for video that will be displayed in <em>Fly View</em>.</p>
+<p><img alt="Video settings" src="../../../assets/settings/general/video_udp.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Video Source</strong>: Video Stream Disabled | RTSP Video Stream | UDP h.264 Video Stream | UDP h.265 Video Stream | TCP-MPEG2 Video Stream | MPEG-TS (h.264) Video Stream | Integrated Camera</li>
+</ul>
+<p>::: info
+  If no video source is specified then no other video or <em>video recording</em> settings will be displayed (above we see the settings when UDP source is selected).
+  :::</p>
+<ul>
+<li><strong>URL/Port</strong>: Connection type-specific stream address (may be port or URL).</li>
+<li><strong>Aspect Ratio</strong>: Aspect ratio for scaling video in video widget (set to 0.0 to ignore scaling)</li>
+<li><strong>Disabled When Disarmed</strong>: Disable video feed when vehicle is disarmed.</li>
+<li><strong>Low Latency Mode</strong>: Enabling low latency mode reduces the video stream latency, but may cause frame loss and choppy video (especially with a poor network connection). <!-- disables the internal jitter buffer --></li>
+</ul>
+<h2 id="video-recording">Video Recording</h2>
+<p>The <em>Video Recording</em> section is used to specify the file format and maximum allocated file storage for storing video.
+Videos are saved to a sub-directory ("Video") of the <a href="#load_save_path">Application Load/Save Path</a>.</p>
+<p><img alt="Video - without auto deletion" src="../../../assets/settings/general/video_recording.jpg" /></p>
+<p><img alt="Video - auto deletion" src="../../../assets/settings/general/video_recording_auto_delete.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Auto-Delete Files</strong>: If checked, files are auto deleted when the specified amount of storage is used.</li>
+<li><strong>Max Storage Usage</strong>: Maximum video file storage before video files are auto deleted.</li>
+<li><strong>Video File Format</strong>: File format for the saved video recording: mkv, mov, mp4.</li>
+</ul>
+<h2 id="brand-image">Brand Image</h2>
+<p>This setting specifies the <em>brand image</em> used for indoor/outdoor colour schemes.</p>
+<p>The brand image is displayed in place of the icon for the connected autopilot in the top right corner of the toolbar.
+It is provided so that users can easily create screen/video captures that include a company logo/branding.</p>
+<p><img alt="Brand Image" src="../../../assets/settings/general/brand_image.jpg" /></p>
+<p>The settings are:</p>
+<ul>
+<li><strong>Indoor Image</strong>: Brand image used in <a href="#colour_scheme">indoor color scheme</a></li>
+<li><strong>Outdoor Image</strong>: Brand image used in <a href="#colour_scheme">outdoor color scheme</a></li>
+<li><strong>Reset Default Brand Image</strong>: Reset the brand image back to default.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
