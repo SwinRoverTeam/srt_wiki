@@ -1,4 +1,3 @@
----
 layout: home
 
 hero:
@@ -26,4 +25,3 @@ features:
     details: Manage multiple vehicles and different types of vehicles
   - title: Broad OS support
     details: Windows, OS X, Linux platforms, iOS and Android devices
----
